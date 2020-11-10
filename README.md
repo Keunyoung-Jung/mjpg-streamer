@@ -53,6 +53,9 @@ Simple compilation - Rewrite by keyog
 ./install_streamer.sh
 ```
 ------------------
+<details>
+<summary>접기/펼치기 버튼</summary>
+<div markdown="1">
 > You must have cmake installed. You will also probably want to have a development
 > version of libjpeg installed. I used libjpeg8-dev. e.g.
 > 
@@ -78,6 +81,8 @@ Simple compilation - Rewrite by keyog
 >     make distclean
 >     make CMAKE_BUILD_TYPE=Debug
 >     sudo make install
+</div>
+</details>
     
 Advanced compilation (via CMake)
 --------------------------------
