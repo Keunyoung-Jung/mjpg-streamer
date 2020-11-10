@@ -47,6 +47,15 @@ Output plugins:
 Building & Installation
 =======================
 
+Simple compilation - Rewrite by keyog
+------------------
+```
+./install_streamer.sh
+```
+------------------
+<details>
+<summary>Original compile guide</summary>
+<div markdown="1">
 You must have cmake installed. You will also probably want to have a development
 version of libjpeg installed. I used libjpeg8-dev. e.g.
 
@@ -72,6 +81,8 @@ with debugging symbols enabled, you can do this:
     make distclean
     make CMAKE_BUILD_TYPE=Debug
     sudo make install
+</div>
+</details>
     
 Advanced compilation (via CMake)
 --------------------------------
@@ -88,12 +99,24 @@ shows the basic steps to enable the experimental HTTP management feature:
 
 Usage
 =====
+**Use Webcam on resolution 1080p - Rewrite by keyog**
+--------------------------------
+```
+./start_streamer.sh
+```
+--------------------------------
+<details>
+<summary>Original usage guide</summary>
+<div markdown="1">
+
 From the mjpeg streamer experimental
 folder:
 ```
 export LD_LIBRARY_PATH=.
 ./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so"
 ```
+</div>
+</details>
 
 See [README.md](mjpg-streamer-experimental/README.md) or the individual plugin's documentation for more details.
 
