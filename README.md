@@ -94,6 +94,12 @@ shows the basic steps to enable the experimental HTTP management feature:
 
 Usage
 =====
+**Use Webcam on resolution 1080p - Rewrite by keyog**
+--------------------------------
+```
+./start_streamer.sh
+```
+--------------------------------
 From the mjpeg streamer experimental
 folder:
 ```
