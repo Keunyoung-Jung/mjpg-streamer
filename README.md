@@ -106,8 +106,9 @@ Usage
 ```
 --------------------------------
 <details>
-<summary>Original compile guide</summary>
+<summary>Original usage guide</summary>
 <div markdown="1">
+
 From the mjpeg streamer experimental
 folder:
 ```
