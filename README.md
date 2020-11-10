@@ -54,33 +54,33 @@ Simple compilation - Rewrite by keyog
 ```
 ------------------
 <details>
-<summary>접기/펼치기 버튼</summary>
+<summary>Original compile guide</summary>
 <div markdown="1">
-> You must have cmake installed. You will also probably want to have a development
-> version of libjpeg installed. I used libjpeg8-dev. e.g.
-> 
->     sudo apt-get install cmake libjpeg8-dev
-> 
-> If you do not have gcc (and g++ for the opencv plugin) you may need to install those.
-> 
->     sudo apt-get install gcc g++
-> 
-> Simple compilation
-> ------------------
-> 
-> This will build and install all plugins that can be compiled.
-> 
->     cd mjpg-streamer-experimental
->     make
->     sudo make install
->     
-> By default, everything will be compiled in "release" mode. If you wish to compile
-> with debugging symbols enabled, you can do this:
-> 
->     cd mjpg-streamer-experimental
->     make distclean
->     make CMAKE_BUILD_TYPE=Debug
->     sudo make install
+You must have cmake installed. You will also probably want to have a development
+version of libjpeg installed. I used libjpeg8-dev. e.g.
+
+    sudo apt-get install cmake libjpeg8-dev
+
+If you do not have gcc (and g++ for the opencv plugin) you may need to install those.
+
+    sudo apt-get install gcc g++
+
+Simple compilation
+------------------
+
+This will build and install all plugins that can be compiled.
+
+    cd mjpg-streamer-experimental
+    make
+    sudo make install
+    
+By default, everything will be compiled in "release" mode. If you wish to compile
+with debugging symbols enabled, you can do this:
+
+    cd mjpg-streamer-experimental
+    make distclean
+    make CMAKE_BUILD_TYPE=Debug
+    sudo make install
 </div>
 </details>
     
@@ -105,12 +105,17 @@ Usage
 ./start_streamer.sh
 ```
 --------------------------------
+<details>
+<summary>Original compile guide</summary>
+<div markdown="1">
 From the mjpeg streamer experimental
 folder:
 ```
 export LD_LIBRARY_PATH=.
 ./mjpg_streamer -o "output_http.so -w ./www" -i "input_raspicam.so"
 ```
+</div>
+</details>
 
 See [README.md](mjpg-streamer-experimental/README.md) or the individual plugin's documentation for more details.
 
